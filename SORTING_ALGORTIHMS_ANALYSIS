@@ -1,0 +1,304 @@
++------------------------------------------------------------+
+| @tittle: 	Sorting Algorithms Analysis						 
+|											 
+| @author:	Sergio Penavades Suarez					
+| 											
+| @date: 	12/29/2016								
+|											
+| @version:	1.0									
++------------------------------------------------------------+
+
+---------------
+I-Introduction
+---------------
+
+A sorting algorithm is an algorithm that receives a list/array of elements and put them in a numerical order. The output of the algorithm is in nondecreasing order and it is a permutation of the input.
+
+# Algortihm properties:
+------------------------
+-Worst-case key comparisions: number of comparisions for worst-case.
+-Worst-case swaps: number of swaps for worst-case.
+-Memory usage(in-place): requires a constant amount of additional space. An in-place sort needs only O(1) memory beyond the items being sorted; sometimes O(log(n)) additional memory is considered "in-place".
+-Recursion: some algorithms are either recursive or non-recursive, while others may be both.
+-Stability: preserves the order of items in the array that are equal.
+-Comparision Sort: examines the data only by comparing two elements with a comparison operator.
+-Adaptability: the algorithm performance improves the more sorted the list is initially.
+
+# The ideal sorting algorithm would have the following properties:
+-------------------------------------------------------------------
+Worst-case O(n·lg(n)) key comparisons.
+Worst-case O(n) swaps.
+Operates in place, requiring O(1) extra space.
+Stable: Equal keys aren’t reordered.
+Adaptive: Speeds up to O(n) when data is nearly sorted or when there are few unique keys.
+
+There is no algorithm that has all of these properties, and so the choice of sorting algorithm depends on the application.
+
+
+---------------------------------
+II-Algorithms subject to analysis
+---------------------------------
+
+# Comparison algorithms
+------------------------
+-Selection sort
+-Heapsort
+-Insertion sort
+-Shell sort
+-Bubble sort
+-Cocktail sort
+-Comb sort
+-Odd-even sort
+-Gnome sort
+-Merge sort
+-Merge Bottom-up sort
+-Quicksort
+-Quicksort three way partition
+
+
+# Non-comparison algorithms
+----------------------------
+-Bucket sort
+-Counting sort
+-Radix sort (LSD)
+
+
+-------------------
+III-Selection sort
+-------------------
+
+# Characteristics
+-----------------
+-Type: Selection
+-Time worst-case: n^2
+-Time best-case: n^2
+-Time average: n^2
+-Memory usage: 1
+-Stable: NO
+-Adaptive: NO
+
+
+------------
+IV-Heapsort
+------------
+
+# Characteristics
+-----------------
+-Type:  Selection
+-Time worst-case: n log(n)
+-Time best-case: n log(n)
+-Time verage: n log(n)
+-Memory usage: 1
+-Stable: NO
+-Adaptive: NO(no really adaptative)
+
+
+-----------------
+V-Insertion sort
+-----------------
+
+# Characteristics
+-----------------
+-Type: Insertion
+-Time worst-case: n^2
+-Time best-case: n
+-Time average: n^2
+-Memory usage: 1
+-Stable: YES
+-Adaptive: O(n) time when nearly sorted
+
+
+--------------
+VI-Shell sort
+--------------
+
+# Characteristics
+-----------------
+-Type: Insertion
+-Time worst-case: n log(n)^2
+-Time best-case: n log(n)
+-Time average: n log(n)^2 or n^(5/4)
+-Memory usage: 1
+-Stable: NO
+-Adaptive: O(n·lg(n)) time when nearly sorted
+
+
+----------------
+VII-Bubble sort
+----------------
+
+# Characteristics
+-----------------
+-Type: Exchanging
+-Time worst-case: n^2
+-Time best-case: n
+-Time average: n^2
+-Memory usage: 1
+-Stable: YES
+-Adaptive: O(n) when nearly sorted
+
+
+-------------------
+VIII-Cocktail sort
+-------------------
+
+# Characteristics
+-----------------
+-Type: Exchanging
+-Time worst-case: n^2
+-TIme best-case: n
+-Time average: n^2
+-Memory usage: 1
+-Stable: YES
+-Adaptive: 
+
+
+-------------
+IX-Comb sort
+-------------
+
+# Characteristics
+-----------------
+-Type: Exchanging
+-Time worst-case: n^2
+-Time best-case: n log(n)
+-Time average: n^2
+-Memory usage: 1
+-Stable: NO
+-Adaptive: 
+
+
+----------------
+X-Odd-even sort
+----------------
+
+# Characteristics
+-----------------
+-Type: Exchanging
+-Time worst-case: n^2
+-Time best-case: n
+-Time average: n^2
+-Memory usage: 1
+-Stable: YES
+-Adaptive: 
+
+
+--------------
+XI-Gnome sort
+--------------	
+
+# Characteristics
+-----------------
+-Type: Exchanging
+-Time worst-case: n^2
+-Time best-case: n
+-Time average: n^2
+-Memory usage: 1
+-Stable: YES
+-Adaptive: 
+
+
+---------------
+XII-Merge sort
+---------------	
+
+# Characteristics
+-----------------
+-Type: Exchanging
+-Time worst-case: n log(n)
+-Time best-case: n log(n)
+-Time average: n log(n)
+-Memory usage: n
+-Stable: YES
+-Adaptive: NO
+
+
+--------------------------
+XIII-Merge Bottom-up sort 
+--------------------------	
+
+# Characteristics
+-----------------
+-Type: Exchanging
+-Time worst-case: n log(n)
+-Time best-case: n log(n)
+-Time average: n log(n)
+-Memory usage: n
+-Stable: YES
+-Adaptive:  NO
+
+
+--------------
+XIV-Quicksort
+--------------	
+
+# Characteristics
+-----------------
+-Type: Exchanging
+-Time worst-case: n^2
+-Time best-case: n log(n)
+-Time average: n log(n)
+-Memory usage: log(n) on average and n in worst-case 
+-Stable: NO
+-Adaptive: NO
+
+
+----------------------------------
+XIV-Quicksort three way partition
+----------------------------------	
+
+# Characteristics
+-----------------
+-Type: Exchanging
+-Time worst-case: n^2
+-Time best-case: n log(n) 
+-Time average: n log(n)
+-Memory usage: log(n)
+-Stable: NO
+-Adaptive: O(n) time when O(1) unique keys
+
+
+-------------------------
+XV-Bucket sort
+-------------------------	
+
+# Characteristics
+-----------------
+-Type: Distribution
+-Time worst-case: n^2
+-Time best-case: n + k (k is the number of buckets)
+-Time average: n + k (k is the number of buckets)
+-Memory usage: n + k (k is the number of buckets)
+-Stable: YES
+-Adaptive: -
+
+
+-------------------------
+XVI-Counting sort
+-------------------------	
+
+# Characteristics
+-----------------
+-Type: Distribution
+-Time worst-case: n + k (k is the number of buckets)
+-Time best-case: n + k (k is the number of buckets)
+-Time average: n + k (k is the number of buckets)
+-Memory usage: k (k is the number of buckets)
+-Stable: YES
+-Adaptive: -
+
+-------------------------
+XVII-Radix sort (LSD)
+-------------------------	
+
+# Characteristics
+-----------------
+-Type: Distribution
+-Time worst-case: w * n (w is the word size)
+-Time best-case: w * n (w is the word size)
+-Time average: w * n (w is the word size)
+-Memory usage: n + r (r is the radix)
+-Stable: 
+-Adaptive: -
+
+
